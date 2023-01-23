@@ -1,13 +1,12 @@
 package ru.elmanov.curmulate;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import ru.elmanov.curmulate.logics.Logics;
 
-@SpringBootApplication
 public class CurmulateApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CurmulateApplication.class, args);
+	public static void main(String[] args){
+		Logics logics = new Logics();
+		logics.run();
 	}
 
 }
